@@ -31,7 +31,7 @@ app.get('/download/:id', async (req, res) => {
 
         // Set the response headers for PDF download
         res.setHeader('Content-Type', 'application/pdf');
-        res.setHeader('Content-Disposition', 'attachment; filename=output.pdf');
+        res.setHeader('Content-Disposition', 'attachment; filename=backgroundReport.pdf');
 
         // Send the PDF as the response
         res.send(response.data);
