@@ -11,7 +11,7 @@ app.use(express.json());
 app.get('/download/:id', async (req, res) => {
     const id = req.params.id;
     const username = req.query.username; // Extract username from query parameters
-    const filename = `${username}_backgroundReport.pdf`; // Set the filename using the username
+    const filename = `${username}.pdf`; // Set the filename using the username
     const apiUrl = `https://api.ferretly.com/api/Subjects/${id}/downloadBackgroundReport`;
 
     const headers = {
